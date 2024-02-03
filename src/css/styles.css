@@ -1,0 +1,28 @@
+body.popup {
+    width: 25rem;
+    padding: 1rem;
+}
+
+table.report-table {
+    display: none;
+}
+
+td {
+    max-width: 50rem;
+    white-space: nowrap; /* Prevents text from wrapping to next line */
+    overflow: hidden; /* Hides any text that overflows the element */
+    text-overflow: ellipsis; /* Displays "..." to indicate truncated text */
+}
+
+pre.rawjson {
+    display: none;
+}
+
+dialog {
+    max-width: 90%;
+    max-height: 95%;
+}
+
+dialog::backdrop {
+    background-color: rgba(230, 230, 230, 0.5);
+}
