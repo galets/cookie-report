@@ -1,0 +1,40 @@
+<html>
+    <link rel="stylesheet" href="/css/styles.css"></link>
+    <link rel="stylesheet" href="report.css"></link>
+    <body class="popup">
+        <h1>Cookie Report</h1>
+
+        <template id="row-template">
+            <tr id="record">
+                <td id="name"></td>
+                <td id="value"></td>
+                <td id="path"></td>
+                <td id="domain"></td>
+                <td id="source"></td>
+            </tr>
+        </template>
+
+        <table id="table" class="report-table">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Path</th>
+                <th>Domain</th>
+                <th>Source</th>
+            </tr>
+        </table>
+
+        <pre id="text" class="rawjson">
+        </pre>
+
+        <dialog id="dialog">
+            <pre id="recjson">               
+            </pre>
+            <form method="dialog">
+                <button>OK</button>
+            </form>
+        </dialog>
+    </body>
+
+    <script src="report.js"></script>
+</html>
