@@ -1,8 +1,21 @@
 let data;
+let tabId;
+
+async function download() {
+    json = JSON.stringify(data, null, 4);
+    var blob = new Blob([json], { type: "application/json" });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `cookie-report-${tabId}.json`;
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+}
 
 async function initialize() {
     const urlParams = new URLSearchParams(window.location.search);
-    const tabId = urlParams.get("tabId");
+    tabId = urlParams.get("tabId");
     data = await chrome.runtime.sendMessage({ getCookiesForTabId: tabId });
 
     const text = document.getElementById("text");
@@ -27,6 +40,8 @@ async function initialize() {
     }
 
     table.style.display = "block";
+
+    document.getElementById("download").addEventListener("click", download);
 }
 
 initialize();

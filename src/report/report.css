@@ -1,6 +1,14 @@
-table {
+table.report-table {
+    display: none;
     width: 100%;
     border-collapse: collapse;
+}
+
+td {
+    max-width: 50rem;
+    white-space: nowrap; /* Prevents text from wrapping to next line */
+    overflow: hidden; /* Hides any text that overflows the element */
+    text-overflow: ellipsis; /* Displays "..." to indicate truncated text */
 }
 
 th,
@@ -12,6 +20,10 @@ td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+pre.rawJson {
+    display: none;
 }
 
 dialog {
@@ -28,6 +40,13 @@ dialog::backdrop {
 
 #okButton {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#download {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
