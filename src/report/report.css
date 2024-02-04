@@ -15,5 +15,19 @@ tr:nth-child(even) {
 }
 
 dialog {
-    
+    width: 80%;
+    height: 85%;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+}
+
+dialog::backdrop {
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+#okButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }

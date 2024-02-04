@@ -14,15 +14,6 @@ td {
     text-overflow: ellipsis; /* Displays "..." to indicate truncated text */
 }
 
-pre.rawjson {
+pre.rawJson {
     display: none;
-}
-
-dialog {
-    max-width: 90%;
-    max-height: 95%;
-}
-
-dialog::backdrop {
-    background-color: rgba(230, 230, 230, 0.5);
 }

@@ -10,7 +10,7 @@ async function initialize() {
 
     const table = document.getElementById("table");
     const dialog = document.getElementById("dialog");
-    const recjson = document.getElementById("recjson");
+    const recJson = document.getElementById("recJson");
     for (let record of data) {
         let temp = document.getElementById("row-template");
         let clon = temp.content.cloneNode(true);
@@ -20,7 +20,7 @@ async function initialize() {
         clon.getElementById("domain").innerText = record.cookie?.domain || "";
         clon.getElementById("source").innerText = record.source;
         clon.getElementById("record").addEventListener("click", function () {
-            recjson.innerText = JSON.stringify(record, null, 4);
+            recJson.innerText = JSON.stringify(record, null, 4);
             dialog.showModal();
         });
         table.appendChild(clon);
