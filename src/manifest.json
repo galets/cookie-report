@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cookie Report",
   "description": "Track cookies",
-  "version": "0.0.2.7235",
+  "version": "0.0.3.7235",
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "assets/icon-cookie-64.png"
