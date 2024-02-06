@@ -28,7 +28,7 @@
         "type": "module"
     },
     "minimum_chrome_version": "92",
-    "permissions": ["webRequest", "activeTab", "scripting", "tabs"],
+    "permissions": ["webRequest", "activeTab", "tabs"],
     "host_permissions": ["<all_urls>"],
     "icons": {
         "64": "assets/icon-cookie-64.png"
