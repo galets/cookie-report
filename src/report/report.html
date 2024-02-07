@@ -1,6 +1,9 @@
 <html>
-    <link rel="stylesheet" href="/css/styles.css"></link>
-    <link rel="stylesheet" href="report.css"></link>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css"></link>
+        <link rel="stylesheet" href="report.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
     <body class="popup">
         <h1>Cookie Report</h1>
 
@@ -30,11 +33,13 @@
         <button id="download">Download</button>
 
         <dialog id="dialog">
-            <pre id="recJson">               
-            </pre>
-            <form method="dialog">
-                <button id="okButton">OK</button>
-            </form>
+            <div>
+                <pre id="recJson">               
+                </pre>
+                <form method="dialog">
+                    <button id="okButton">OK</button>
+                </form>
+            </div>
         </dialog>
     </body>
 
