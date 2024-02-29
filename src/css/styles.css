@@ -7,4 +7,6 @@
 
 body {
     font-family: "RobotoRegular", sans-serif;
+    background-color: hsl(240, 15%, 8%);
+    color: hsl(0, 0%, 97%); /* Modern color for text */
 }

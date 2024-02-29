@@ -1,6 +1,9 @@
 # vscode environment
 .vscode
 
+# temp dirs
+tmp
+
 # Logs
 logs
 *.log
