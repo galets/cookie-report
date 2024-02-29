@@ -4,6 +4,12 @@ table.report-table {
     border-collapse: collapse;
 }
 
+thead {
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+}
+
 td {
     max-width: 50rem;
     white-space: nowrap; /* Prevents text from wrapping to next line */
